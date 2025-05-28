@@ -64,7 +64,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (dead) return;
 
-        // Gunakan mobile input jika di mobile
         if (Application.isMobilePlatform)
         {
             moveInput = new Vector2(mobileInputX, 0f);
@@ -146,7 +145,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // Fungsi dipanggil oleh UI button kanan
     public void MoveRight(bool isPressed)
     {
         if (isPressed)
@@ -164,7 +162,6 @@ public class PlayerMovement : MonoBehaviour
             mobileInputX = 0f;
     }
 
-    // Fungsi dipanggil oleh UI button lompat
     public void MobileJump()
     {
         Jump();
