@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;
     public float airControlMultiplier = 0.5f;
 
+    [Header("Death Effect")]
+    public GameObject deathEffectPrefab;
+
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sprite;
